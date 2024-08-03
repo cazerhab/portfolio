@@ -20,35 +20,11 @@
             height: 90%;
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
-        
-        /* iOS Specific Styles */
-        .ios .pdf-container {
-            width: 100%;
-            height: 100%;
-            box-shadow: none;
-        }
-        
-        /* Android Specific Styles */
-        .android .pdf-container {
-            width: 95%;
-            height: 95%;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                document.documentElement.classList.add('ios');
-            } else if (/android/i.test(userAgent)) {
-                document.documentElement.classList.add('android');
-            }
-        });
-    </script>
 </head>
 <body>
     <div class="pdf-container">
-        <iframe src="PDF/Criss_Hossam_Azer_Portfolio.pdf" width="100%" height="100%" style="border: none;"></iframe>
+        <embed src="PDF/Criss_Hossam_Azer_Portfolio.pdf" type="application/pdf" width="100%" height="100%">
     </div>
 </body>
 </html>
