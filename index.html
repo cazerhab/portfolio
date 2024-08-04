@@ -3,28 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Portfolio</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f4f4f4;
-        }
-        .pdf-container {
-            width: 90%;
-            height: 90%;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
-    </style>
+    <title>Criss Azer's Portfolio</title>
+    <!-- CSS References -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <div class="pdf-container">
-        <embed src="PDF/Criss_Hossam_Azer_Portfolio.pdf" type="application/pdf" width="100%" height="100%">
+    <!-- navbar header -->
+    <div class="nav-header">
+        <div class="nav-brand">
+            <img src="PDF\Screenshot 2024-08-03 164608.png" alt="Brand Logo">
+        </div>
+        <i class="fa fa-bars fa-3x"></i>
+        <div class="header-links">
+            <ul>
+                <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+                <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
+                <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+            </ul>
+        </div>
     </div>
+    <!-- end navbar header -->
+
+    <!-- sidebar slider -->
+    <div class="nav-screen">
+        <i class="fa fa-times fa-3x"></i>
+        <div class="nav-container">
+            <div class="nav-links">
+                <ul id="myMenu">
+                    <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+                    <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
+                    <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end navbar slider -->
+
+    <!-- begin fullpage -->
+    <div id="fullpage">
+        <!-- begin section -->
+        <div class="section aboutme" data-anchor="aboutme">
+            <div class="opaque-bg animated fadeInDown">
+                <h1 style="color:white">Criss<span style="color:#FF6363">/</span>Azer Habashi</h1>
+                <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+            </div>
+            <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
+        </div>
+        <!-- end section -->
+
+        <!-- begin section -->
+        <div class="section" data-anchor="skills">
+            <div class="content">
+                <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT ME</h1>
+                <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, I'm Criss Azer Habashi! I'm a recent Mechanical Engineer graduate from the University of California, Irvine!</p>
+                <div class="wow fadeInUp container-skillbar" data-wow-delay="0.2s">
+                    <!-- Skill Bars -->
+                    <div class="resume-container">
+                        <embed src="PDF\Criss_Hossam_Azer_Resume.pdf" width="100%" height="600px" type="application/pdf">
+                        <a href="PDF\Criss_Hossam_Azer_Resume.pdf" download="Criss_Azer_Habashi_Resume" class="download-link">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end section -->
+
+        <!-- begin section -->
+        <div class="section" data-anchor="projects">
+            <div class="content-slide">
+                <div class="slide">
+                    <h1 class="wow fadeInDown" data-wow-delay="0.2s">SARATECH SMART HOME LOCK KIT</h1>
+                    <p class="wow fadeInDown" data-wow-delay="0.2s">Smart Lock Kit</p>
+                    <video class="wow fadeInUp" data-wow-delay="0.2s" controls>
+                        <source src="PDF\Copy of hlm_demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                                      </div>
+                <div class="slide">
+                    <h1 class="wow fadeInDown" data-wow-delay="0.2s">Formula Racing Automatic Actuating Spoiler</h1>
+                    <p class="wow fadeInDown" data-wow-delay="0.2s">Adjustable Spoiler Reacts to Wind Pressure</p>
+                    <video class="wow fadeInUp" data-wow-delay="0.2s" controls>
+                        <source src="PDF\IMG_5380 (3).mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+                <div class="slide">
+                    <h1>PORTFOLIO</h1>
+                    <p>Download The PDF to Learn More About Projects that I've Worked on!</p>
+                    <iframe src="PDF\Criss_Hossam_Azer_Portfolio.pdf" width="600" height="500"></iframe>
+                </div>
+                <div class="slide">
+                    <h1 class="wow fadeInDown" data-wow-delay="0.2s">Mechanical Walker</h1>
+                    <p class="wow fadeInDown" data-wow-delay="0.2s">Watch The Goku Mechanical Walker Where I Placed First Against 25 Other Teams!</p>
+                    <video class="wow fadeInUp" data-wow-delay="0.2s" controls>
+                        <source src="PDF\IMG_6985 (1).mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+
+                <div class="slide">
+                    <h1 class="wow fadeInDown" data-wow-delay="0.2s">Saratech HomeLock Kit Website!</h1>
+                    <p class="wow fadeInDown" data-wow-delay="0.2s">Watch The Website I Created That Connects To The App and MQTT Server!</p>
+                    <video class="wow fadeInUp" data-wow-delay="0.2s" controls>
+                        <source src="PDF\Copy of HLM_Website_V1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </div>
+            </div>
+        </div>
+        <!-- end section -->
+
+        <!-- begin section -->
+        <div class="section fp-auto-height">
+            <div class="footer">
+                <p>CONNECT WITH ME</p>
+                <div class="social-links">
+                    <span><a href="https://www.linkedin.com/in/crissazer" target="_blank"><img src="PDF\98181_linkedin-transparent-png.png" alt="LinkedIn Logo" width="40" height="40"></a></span>
+                    <span><a href="mailto:cazerhab@uci.edu"><img src="PDF\Email.png" alt="Email Icon" width="40" height="40"></a></span>
+                </div>
+            </div>
+        </div>
+        <!-- end section -->
+    </div>
+    <!-- end fullpage -->
+
+    <!-- JavaScript References -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
